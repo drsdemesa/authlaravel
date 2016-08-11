@@ -8,6 +8,10 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
+                    @if (Session::has('status'))
+                        <h3>{{ Session::get('status') }}</h3>
+                    @endif
+
                     Your Application's Landing Page.
                 </div>
             </div>
